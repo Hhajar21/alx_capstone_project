@@ -4,9 +4,191 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>H.Habibi</title>
+   <script src="script.js"></script>
+   <script src="https://kit.fontawesome.com/7c9bcc89a4.js" crossorigin="anonymous"></script>
+   <title>H.Habibi</title>
 </head>
 <body>
-    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="imges/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#protfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <samp>Hajar </samp>  <br>Habibi From Morocco</h1>
+            </div>
+        </div>
+    </div>
+   <!-- --------------------about------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="imges/user.png" alt="" srcset="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm 22 years old, a passionate software developer hailing from Fes, Morocco. 
+With a strong foundation in programming and proficiency in languages 
+such as C, C#, Java, JavaScript, and Python, I'm eager to contribute my creativity 
+and problem-solving skills to a dynamic development team. My journey includes work
+ as a Web Developer and Telemarketer at Orbus Marketing, as well as a Copywriter 
+and Social Media Manager at Virtual Edg. I'm currently studying Software Engineering 
+at ALX Africa, in addition to my educational background, which includes a specialized 
+technician diploma in software development, word and excel certification, and ongoing 
+pursuit of a master's degree in Mobile, Software Quality, and Information System Security
+ at ENSA. These experiences have equipped me to excel in the field, and I'm also 
+well-versed in web technologies, .NET frameworks, J2EE, Spring Boot, and front-end 
+development tools like Angular, Flask, Bootstrap, and React. Moreover, my expertise 
+extends to mobile development for Android, SQL, UML, and Search Engine Optimization (SEO). 
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                     
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>   Web app Development</li>
+                            <li><span>App Development</span><br>   Building Android apps</li>
+                            <li><span>Search Engine Optimization</span><br>   Digital Marketing Strategies</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018 - 2019</span><br>  Scientific Baccalaureate</li>
+                            <li><span>2019 - 2021</span><br>   Specialized Technician Diploma inSoftware Development at ISTIA</li>
+                           
+                            <li><span>2022 - 2024</span><br> Currently pursuing a Master's degree inMobile, Software Quality, and Information SystemSecurity at ENSA</li>
+                            <li><span>2023 - Current</span><br>   Currently studying Software Engineeringat ALX Africa</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - 2023</span><br>   Web Developer and Telemarketer at Orbus Marketing</li>
+                            <li><span>2023 - Current</span><br>   Copywriter and Social Media Manage at Virtual Edg</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- --------------------Services------------------->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate nam laborum, tempore quos adipisci ad dolores sequi, exercitationem, doloremque praesentium iusto! Nam nobis dolor id natus. 
+                        Reprehenderit illo tempora reiciendis!</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate nam laborum, tempore quos adipisci ad dolores sequi, exercitationem, doloremque praesentium iusto! Nam nobis dolor id natus. 
+                        Reprehenderit illo tempora reiciendis!</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ranking-star"></i>
+                    <h2>Search Engine Optimization</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate nam laborum, tempore quos adipisci ad dolores sequi, exercitationem, doloremque praesentium iusto! Nam nobis dolor id natus. 
+                        Reprehenderit illo tempora reiciendis!</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+      <!-- --------------------My work------------------->
+<div id="protfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="imges/work1.png" alt="">
+                <div class="layer">
+                    <h3>Netflix Clone</h3>
+                    <p>This web application allows users to access movie trailers, read summaries, and search for specific films. It is compatible with
+                         mobile devices for a user-friendly experience.
+                    </p>
+                    <a href="https://youtu.be/HAIBGLBIqiY"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+            </div>
+            <div class="work">
+                <img src="imges/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Music app</h3>
+                    <p>This app brings your favorite music to your fingertips. Stream songs, create playlists, and explore artist info effortlessly. Your go-to music
+                         companion for a seamless listening experience.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+            </div>
+            <div class="work">
+                <img src="imges/work3.jpg" alt="">
+                <div class="layer">
+                    <h3>Search Engine Optimization</h3>
+                    <p>we are actively engaged in enhancing the SEO for the Virtual Edge website
+                         to improve its online visibility and reach
+                    </p>
+                    <a href="https://www.virtualedg.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+            </div>
+        </div>
+        <a href="https://github.com/Hhajar21" class="btn">See more</a>
+    </div>
+</div>
+  <!-- --------------------Contact------------------->
+
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-envelope"></i> hajarhabibi016@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +212 633543001</p>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/profile.php?id=100089068936352"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/hajar-habibi-a59224207/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/HajarHabibi3"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://github.com/Hhajar21"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="imges/CV.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder=" Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Send <i class="fa-regular fa-paper-plane"></i></button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © HajarHabibi 2023</p>
+    </div>
+  </div>
 </body>
 </html>
